@@ -68,3 +68,8 @@ footer{
 .hero-text a:hover{
   background-color: white;
 }
+.paypal{
+  width:450px;
+  height: 100px;
+  display: inline-block
+}
