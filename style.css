@@ -1,3 +1,6 @@
+body{
+  height: 100%;
+}
 .navbar{
   margin-bottom: 0;
   border-radius:  0;
@@ -27,14 +30,41 @@ footer{
  display: block;
  margin-left: auto;
  margin-right: auto;
- width: 50%;
+ width: 57%;
+ float: right;
 
 }
 .logoFooter{
   max-height: 250px;
   max-width: 350px;
+  display: inline-block;
+  width: 57%;
 }
 
 .footer{
   width: 100%;
+}
+.hero-image{
+  margin-top: 20px;
+  background-image: url("jogging.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  color: white;
+}
+.hero-text a{
+  text-decoration: none;
+  color:white;
+}
+.hero-text a:hover{
+  background-color: white;
 }
