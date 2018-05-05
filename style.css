@@ -75,8 +75,7 @@ position: relative;
   height: 150px;
 }
 footer{
-margin-top: 100px;
-height: 150px;
+
 }
 .logo{
  display: block;
@@ -174,6 +173,7 @@ height: 150px;
 .aboutcon{
   margin-top: 100px;
   width: 100%;
+  margin-bottom: 100px;
 
 }
 .aboutimg{
@@ -189,6 +189,33 @@ box-shadow: 5px 10px 8px #888888;
   padding-right: 15px;
   text-align: left;
   line-height: 1.5;
+}
+.exeri{
+  background-image: url("odin1.png");
+  background-repeat:no-repeat;
+  background-size: contain;
+  height: 100%;
+  background-color: #804000;
+  width: 100%;
+}
+.exeritable{
+  margin-top: 350px;
+  font-family: 'Fredericka the Great', cursive;
+}
+table{
+background-color: rgba(192, 192, 192, 0.9);
+height: 250px;
+font-size: 20px;
+}
+th{
+text-align: center;
+background-color: rgba(0, 153, 204,0.9);
+}
+td{
+  text-align: right;
+}
+.ext {
+  text-align: left;
 }
 
 
