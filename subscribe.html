@@ -13,6 +13,17 @@
   <!--Latest minified Jquery-->
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <script>
+      function printQuery() {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+            document.write(pair[0] + ": " + pair[1] + "<br />");
+        }
+      }
+    </script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -34,7 +45,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
 
-          <li class="active"><a href="#" class="navhead">Home<span class="sr-only">(current)</span></a></li>
+          <li class=""><a href="index.html" class="navhead">Home<span class="sr-only">(current)</span></a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store<span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -83,7 +94,16 @@
     <!-- /.container-fluid -->
   </nav>
 
-  <footer>
+    <div class="container-fluid subpage">
+      <h2>Thank You for Subscibing to the Iron Viking News Letter</h2>
+      <div class="subpagepassed">
+      <script>
+        printQuery();
+      </script>
+      </div>
+    </div>
+
+  <footer style="position:absolute; bottom:0;width:100%">
     <div class="footer" id="footer">
 
 
