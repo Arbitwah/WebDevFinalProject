@@ -289,14 +289,16 @@ background-color: white;
 .bodyimg h2 {
   text-align: left;
 }
-.productbox{
-  max-height: 300px;
-  max-width: 300px;
+.caption{
+text-align: center;
 }
 
 @media screen and (max-width: 700px){
 .abimg{
   padding-right: 0px;
+}
+.column{
+margin-left: 0px;
 }
   .aboutcon{
     margin-top: 10px;

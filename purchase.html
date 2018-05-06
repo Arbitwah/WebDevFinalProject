@@ -13,10 +13,21 @@
   <!--Latest minified Jquery-->
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <script>
+      function printQuery() {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+            document.write(pair[0] + ": " + pair[1] + "<br />");
+        }
+      }
+    </script>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="indexbody">
+<body>
   <nav class="navbar navbar-default ups">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -34,7 +45,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
 
-          <li class="active"><a href="#" class="navhead">Home<span class="sr-only">(current)</span></a></li>
+          <li class=""><a href="index.html" class="navhead">Home<span class="sr-only">(current)</span></a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store<span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -77,80 +88,22 @@
             </ul>
           </li>
         </ul>
-        <!-- /.navbar-collapse -->
       </div>
+      <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
   </nav>
-<div class="container-fluid">
 
-
-  <div class="maxi">
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <a href="men.html"><img src="man.jpg" alt="Los Angeles"></a>
-      </div>
-
-      <div class="item">
-        <a href="women.html"><img src="woman.jpg" alt="Chicago"></a>
-      </div>
-
-      <div class="item">
-        <a href="assecories.html"><img src="assecories.jpg" alt="New York"></a>
-
+    <div class="container-fluid subpage">
+      <h2>Thank You for Purchasing from the IronViking's WebStore</h2>
+      <div class="subpagepassed">
+      <script>
+        printQuery();
+      </script>
       </div>
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  </div>
-</div>
-
-  <div class="row clearfix" style="margin: auto;width: 100%;">
-
-
-    <div class="jumbotron indexjum column col-xs-12 pull-left">
-      <div class="container jumcon">
-        <h4> <span style="background-color:black;">Shield Maiden's Apparel</span> </h4>
-        <p><a class="btn btn-primary btn-group" href="women.html" role="button">Shop</a></p>
-
-      </div>
-    </div>
-
-    <div class="jumbotron indexjum1 column col-xs-12 pull-left">
-      <div class="container jumcon1">
-        <h4> <span style="background-color:black;">Beserker's Apparel</span> </h4>
-        <p><a class="btn btn-primary btn-group" href="men.html" role="button">Shop</a></p>
-      </div>
-    </div>
-    <div class="jumbotron indexjum2 column col-xs-12 pull-left">
-      <div class="container jumcon1">
-        <h4> <span style="background-color:black;">Iron Viking Assecories</span> </h4>
-        <p><a class="btn btn-primary btn-group" href="assecories.html" role="button">Shop</a></p>
-      </div>
-
-    </div>
-  </div>
-
-  <footer>
+  <footer style="position:absolute; bottom:0;width:100%">
     <div class="footer" id="footer">
 
 
