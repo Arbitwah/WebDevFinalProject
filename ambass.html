@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Body Types</title>
+  <title>Ambassadors</title>
   <!--Latest minified Jquery-->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <!-- Latest compiled and minified CSS -->
@@ -13,6 +13,17 @@
   <!--Latest minified Jquery-->
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <script>
+      function printQuery() {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+            document.write(pair[0] + ": " + pair[1] + "<br />");
+        }
+      }
+    </script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -34,23 +45,23 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
 
-          <li ><a href="index.html" class="navhead">Home<span class="sr-only">(current)</span></a></li>
+          <li class=""><a href="index.html" class="navhead">Home<span class="sr-only">(current)</span></a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a  href="men.html">Men</a></li>
-              <li><a  href="women.html">Women</a></li>
-              <li><a  href="assecories.html">Accessories</a></li>
+              <li><a href="men.html">Men</a></li>
+              <li><a href="women.html">Women</a></li>
+              <li><a href="assecories.html">Accessories</a></li>
             </ul>
           </li>
-          <li class=""><a href="about.html" class="navhead">About The CEO</a></li>
+          <li><a href="about.html" class="navhead">About The CEO</a></li>
             <li class=""><a class="navhead" href="Ambassador.html">Ambassador's Page</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle navhead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fitness<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a  href="nutri.html">Nutrients Guide</a></li>
-              <li class="active"><a href="body.html">Body Types</a></li>
-              <li><a  href="exer.html">Exercise Guide</a></li>
+              <li><a href="nutri.html">Nutrients Guide</a></li>
+              <li><a href="body.html">Body Types</a></li>
+              <li><a href="exer.html">Exercise Guide</a></li>
             </ul>
           </li>
         </ul>
@@ -84,32 +95,16 @@
     <!-- /.container-fluid -->
   </nav>
 
+    <div class="container-fluid subpage">
+      <h2>Thank You for Becoming an ambassador</h2>
+      <div class="subpagepassed">
+      <script>
+        printQuery();
+      </script>
+      </div>
+    </div>
 
-  <div class="container-fluid bodycon">
-  <div class="bodyimg clearfix">
-    <img class="img-responsive" src="Simplebodyguide.jpg" alt="bodyguide img" style="float:left; padding-right: 10px; margin-bottom: 150px;">
-    <h2>Ectomorphs</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscin.</p>
-    <h2>Mesomorphs</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscin.</p>
-    <h2>Endomorphs</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscin.</p>
-
-
-  </div>
-  </div>
-  <div style="clear:both;"></div>
-
-
-
-
-
-
-
-
-
-
-  <footer>
+  <footer style="position:absolute; bottom:0;width:100%">
     <div class="footer" id="footer">
 
 
@@ -125,8 +120,8 @@
                 <li class="widget-container widget_nav_menu">
                   <h3 class="title-widget">Helpfull Links</h3>
                   <ul>
-                    <li><a href="index.html" >Home</a></li>
-                    <li><a href="about.html" >About The CEO</a></li>
+                    <li><a href="index.html" class="">Home</a></li>
+                    <li><a href="about.html" class="">About The CEO</a></li>
                     <li><a href="Ambassador.html">Ambassador Page</a></li>
                   </ul>
                 </li>
@@ -138,9 +133,9 @@
                 <li class="widget-container widget_nav_menu">
                   <h3 class="title-widget">Store</h3>
                   <ul>
-                    <li><a href="men.html" >Men</a></li>
-                    <li><a href="women.html" >Women</a></li>
-                    <li><a href="assecories.html" >Accessories</a></li>
+                    <li><a href="men.html" class="">Men</a></li>
+                    <li><a href="women.html" class="">Women</a></li>
+                    <li><a href="assecories.html" class="">Accessories</a></li>
                   </ul>
                 </li>
               </ul>
@@ -151,9 +146,9 @@
                 <li class="widget-container widget_nav_menu">
                   <h3 class="title-widget">Finess</h3>
                   <ul>
-                    <li><a href="nutri.html" >Nutrients Guide</a></li>
-                    <li><a href="body.html" >Body Types</a></li>
-                    <li><a href="exer.html" >Exercise Guide</a></li>
+                    <li><a href="nutri.html" class="">Nutrients Guide</a></li>
+                    <li><a href="body.html" class="">Body Types</a></li>
+                    <li><a href="exer.html" class="">Exercise Guide</a></li>
                   </ul>
                 </li>
               </ul>

@@ -182,7 +182,7 @@ footer{
   padding-left: 40px;
 }
 .aboutcon{
-  margin-top: 100px;
+  margin-top: 250px;
   width: 100%;
   margin-bottom: 100px;
 }
@@ -195,6 +195,7 @@ background-color: white;
 .aboutimg h2{
   text-align: center;
 }
+
 .aboutimg p{
   padding-top: 15px;
   padding-right: 15px;
@@ -303,6 +304,12 @@ background-color: white;
 .caption{
 text-align: center;
 }
+.big{
+  display: inline;
+}
+.small{
+  display: none;
+}
 
 @media screen and (max-width: 700px){
 .abimg{
@@ -314,4 +321,12 @@ margin-left: 0px;
   .aboutcon{
     margin-top: 10px;
   }
+.big{
+display: none;
+}
+.small{
+  display: inline;
+}
+
+
 }
